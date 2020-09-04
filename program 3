@@ -1,0 +1,15 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int x=sc.nextInt();
+		int y=sc.nextInt();
+		System.out.println("Before Swapping\n"+"x="+x+"\n"+"y="+y);
+		x=x+y;
+		y=x-y;
+		x=x-y;
+		System.out.println("After Swapping Without a third variable\n"+"x="+x+"\n"+"y="+y);
+
+	}
+}
