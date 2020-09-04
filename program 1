@@ -1,0 +1,20 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	
+		String str="Build products and solutions which will bestow the working ways of mankind beyond their imagination by focusing on the existing complications and create platforms using latest cutting-edge technologies & bring in the change through excellence from innovative solutions and micro services which will drive the empowerment to mankind for a digital future.";
+		int count=0;
+		for(int index=0;index<str.length();index++){
+		    if(str.charAt(index)!=' '){
+		        count++;
+		    }
+		}
+		System.out.println(count);
+
+	}
+}
+
+
+
+
