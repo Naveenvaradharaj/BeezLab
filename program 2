@@ -1,0 +1,27 @@
+import java.util.*;
+class Hello {
+    
+  
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a[] = new int[1001];
+        String str=sc.nextLine();
+        String arr[]=str.split(" ");
+        int j=0;
+        for(int i=0;i<arr.length;i++){
+            a[j]=Integer.parseInt(arr[i]);
+            j++;
+        }
+        
+        int n=arr.length;
+        int start=a[0],end=a[n-1];
+        int total=0;
+        total = (n + 1) * (n + 2) / 2;
+        for (int i = 0; i < n; i++){
+            total -= a[i];
+    }
+    System.out.println("The missing number from "+start+" to "+end+" are "+total);
+    
+    }
+}
